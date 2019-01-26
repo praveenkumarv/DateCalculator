@@ -34,8 +34,8 @@ class DateCalculator{
         list($year, $month, $day) = $date_array;
 
         /**
-        Since February is an especially short month, it is normally better to consider January and February the 13th and 14th months of the previous year. 
-        So first, if the month is 1 or 2, then you add 12 to the month and subtract 1 from the year.
+        //Since February is an especially short month, it is normally better to consider January and February the 13th and 14th months of the previous year. 
+        //So first, if the month is 1 or 2, then you add 12 to the month and subtract 1 from the year.
         */
         if ($month <=2){
             $month = $month+12;
@@ -43,8 +43,8 @@ class DateCalculator{
         }
 
         /**
-        Formula
-        Number of Days = (1461∗Year)4+(153∗Month)5+Day
+        //Formula
+        //Number of Days = (1461∗Year)4+(153∗Month)5+Day
         */     
         $no_of_days = (146097*$year)/400 + (153*$month + 8)/5 + $day;
         
