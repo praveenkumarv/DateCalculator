@@ -1,4 +1,5 @@
 <?php
+
 require('DateCalculatorClass.php');
 
 if(!empty($_POST['startDate']) && !empty($_POST['endDate'])){
